@@ -1,0 +1,33 @@
+version: "3"
+services:
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    hostname: redis
+    networks:
+      - backend
+    restart: always
+
+  app:
+    build: .
+    image: izikaj/vat_ever
+    command: sh -c "bin/vat_ever"
+    ports:
+      - '3000:3000'
+    environment:
+      - REDIS_URL=redis://redis:6379/11
+    volumes:
+      - .:/home/app
+    networks:
+      - backend
+    depends_on:
+      - redis
+
+volumes:
+  redis-data:
+
+networks:
+  backend:

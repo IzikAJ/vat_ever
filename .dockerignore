@@ -1,0 +1,12 @@
+.git
+/lib/
+/bin/
+/.shards/
+log
+tmp
+.crystal-version
+.DS_Store
+.dockerignore
+.editorconfig
+.gitignore
+.travis.yml

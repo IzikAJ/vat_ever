@@ -1,0 +1,12 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+
+*.yml
+!shard.yml
+
+sentry*
+.DS_Store
+/vat_ever
+/vat_ever.*

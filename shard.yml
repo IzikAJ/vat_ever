@@ -1,0 +1,26 @@
+name: vat_ever
+version: 0.1.0
+crystal: 0.27.0
+
+authors:
+  - IzikAJ <izikaj@gmail.com>
+
+targets:
+  vat_ever:
+    main: src/vat_ever.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+  myhtml:
+    github: kostya/myhtml
+    branch: master
+
+  redis:
+    github: stefanwille/crystal-redis
+
+  sentry:
+    github: samueleaton/sentry
+    branch: master
+license: MIT
