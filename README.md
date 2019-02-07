@@ -5,7 +5,7 @@
 TODO: Write a description here
 
 image size:
-- N/A MB 👏
+- 369.9MB MB 👏
 
 ## Installation
 
